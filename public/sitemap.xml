@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-products.xml</loc>
+    <lastmod>2026-10-11T10:02:31.101Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-categories.xml</loc>
+    <lastmod>2026-10-11T10:02:16.704Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-static.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-blog-posts.xml</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-blog-categories.xml</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost:3000/sitemap-blog-tags.xml</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+  </sitemap>
+</sitemapindex>

@@ -1,0 +1,20 @@
+{
+  "shop": {
+    "language": "en",
+    "currency": "DZD",
+    "timezone": "Africa/Algiers"
+  },
+  "themeConfig": {
+    "copyRight": "© 2026 Abdou-dashbord. All Rights Reserved."
+  },
+  "system": {
+    "extensions": [
+      {
+        "name": "sample",
+        "resolve": "extensions/sample",
+        "enabled": true
+      }
+    ],
+    "theme": "sample"
+  }
+}

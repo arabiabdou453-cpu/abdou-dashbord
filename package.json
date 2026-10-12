@@ -1,0 +1,26 @@
+{
+  "name": "abdou-dashbord",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "setup": "evershop install",
+    "postinstall": "node scripts/apply-customizations.js",
+    "start": "evershop start",
+    "build": "evershop build",
+    "dev": "evershop dev"
+  },
+  "dependencies": {
+    "@evershop/evershop": "2.3.0"
+  },
+  "devDependencies": {
+    "@parcel/watcher": "2.6.0",
+    "@types/config": "3.3.5",
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.5",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "execa": "10.1.0",
+    "typescript": "7.0.2"
+  }
+}

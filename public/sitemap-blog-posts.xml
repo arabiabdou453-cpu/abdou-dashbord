@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000/blog/getting-started-with-your-online-store</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/blog/10-tips-to-boost-your-conversion-rate</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/blog/how-to-optimize-product-pages-for-seo</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/blog/introducing-our-spring-collection</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:3000/blog/building-a-headless-storefront-with-evershop</loc>
+    <lastmod>2026-10-11T10:02:31.996Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
