@@ -165,8 +165,28 @@ export const layout = {
     { file: 'node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Version.js', content: versionJs },
     { file: 'node_modules/@evershop/evershop/dist/modules/cms/pages/admin/all/Survey.js', content: surveyJs },
     { file: 'node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/ai-theme.css', content: aiThemeCss },
-    { file: 'node_modules/@evershop/evershop/src/modules/base/pages/admin/all/ai-theme.css', content: aiThemeCss }
+    { file: 'node_modules/@evershop/evershop/src/modules/base/pages/admin/all/ai-theme.css', content: aiThemeCss },
   ];
+
+  // Dynamic host helper patch
+  const patchHost = async (filePath) => {
+    try {
+      const fullPath = path.resolve(filePath);
+      let code = await fs.readFile(fullPath, 'utf8');
+      if (!code.includes('x-forwarded-host')) {
+        code = code.replace(
+          /const homeUrl = getBaseUrl\(\);/,
+          `const host = request.get('x-forwarded-host') || request.get('host');
+    const proto = request.get('x-forwarded-proto') || request.protocol;
+    const homeUrl = host ? \`\${proto}://\${host}\` : getBaseUrl();`
+        );
+        await fs.writeFile(fullPath, code, 'utf8');
+      }
+    } catch {}
+  };
+
+  await patchHost('node_modules/@evershop/evershop/dist/modules/base/pages/global/context.js');
+  await patchHost('node_modules/@evershop/evershop/dist/modules/base/api/global/context.js');
 
   for (const { file, content } of targets) {
     try {
